@@ -1,0 +1,30 @@
+{
+    "name": "hossamibrahim/unifonic",
+    "description": "Unifonic SMS",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HossamMonir\\Unifonic\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hossam Monir",
+            "email": "hey@digitaltunnel.net"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HossamMonir\\Unifonic\\UnifonicServiceProvider"
+            ],
+            "aliases": {
+                "Unifonic": "HossamMonir\\Unifonic\\Facades\\Unifonic"
+            }
+        }
+    }
+}
