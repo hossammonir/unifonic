@@ -8,7 +8,7 @@ interface CreateSendMessageInterface
 
     public function setBody(string $messageBody): static;
 
-    public function setRecipient(int $recipientNumber): static;
+    public function setRecipient(string $recipientNumber): static;
 
     public function send();
 }

@@ -45,10 +45,10 @@ class CreateSendMessage extends Unifonic implements CreateSendMessageInterface
     /**
      * Set Recipients Mobile Number
      *
-     * @param  int  $recipientNumber
+     * @param  string  $recipientNumber
      * @return $this
      */
-    public function setRecipient(int $recipientNumber): static
+    public function setRecipient(string $recipientNumber): static
     {
         $this->config['Recipient'] = $recipientNumber;
 

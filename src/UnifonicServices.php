@@ -10,7 +10,7 @@ class UnifonicServices
 
     private string $body;
 
-    private int $recipient;
+    private string $recipient;
 
     /**
      * Set Sender ID
@@ -41,10 +41,10 @@ class UnifonicServices
     /**
      * Set Recipient Mobile Number
      *
-     * @param  int  $recipientNumber
+     * @param  string  $recipientNumber
      * @return $this
      */
-    public function setRecipient(int $recipientNumber): static
+    public function setRecipient(string $recipientNumber): static
     {
         $this->recipient = $recipientNumber;
 
