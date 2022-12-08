@@ -42,6 +42,19 @@ class CreateSendMessage extends Unifonic implements CreateSendMessageInterface
         return $this;
     }
 
+
+    /**
+     * Enable Async Sending
+     *
+     * @return $this
+     */
+    public function withAsync(): static
+    {
+        $this->config['async'] = true;
+
+        return $this;
+    }
+
     /**
      * Set Recipients Mobile Number
      *

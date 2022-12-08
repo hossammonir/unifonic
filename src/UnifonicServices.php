@@ -62,6 +62,7 @@ class UnifonicServices
             ->setBody($this->body)
             ->setRecipient($this->recipient)
             ->setSenderId($this->senderID)
+            ->withAsync()
             ->send();
     }
 }
